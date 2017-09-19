@@ -1,3 +1,11 @@
+## Prepare
+
+Install dependencies:
+
+```
+npm install
+```
+
 ## Deploy
 
 a) Set up an AWS profile ([instructions here](https://serverless.com/framework/docs/providers/aws/guide/credentials/)).
