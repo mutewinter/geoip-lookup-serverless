@@ -15,10 +15,10 @@ export const handler = createHandler((request) => {
   }
 
   const geo = geoip.lookup(request.getSourceIp());
-  const country = (geo && geo.country) ? geo.country : 'XX';
+  const country = (geo && geo.country) ? geo.country : '';
 
   return Response.create().body({
-    "country": country,
+    "country_code": country,
     "via": "lookup"
   });
 });
